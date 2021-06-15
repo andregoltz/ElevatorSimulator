@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\OneDrive\\Área de Trabalho\\Projeto Elevador\\Elevator Simulator\\Elevator Simulator.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\Source\\Repos\\andregoltz\\ElevatorSimulator\\Elevator Simulator.csproj",
       "projectName": "Elevator Simulator",
-      "projectPath": "C:\\Users\\andre\\OneDrive\\Área de Trabalho\\Projeto Elevador\\Elevator Simulator\\Elevator Simulator.csproj",
+      "projectPath": "C:\\Users\\andre\\Source\\Repos\\andregoltz\\ElevatorSimulator\\Elevator Simulator.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\OneDrive\\Área de Trabalho\\Projeto Elevador\\Elevator Simulator\\obj\\",
+      "outputPath": "C:\\Users\\andre\\Source\\Repos\\andregoltz\\ElevatorSimulator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

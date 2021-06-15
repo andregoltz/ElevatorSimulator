@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YcfU+NdvFt/t3/kFDrBSkg1aEoXKYwfrsBarf51qZ/wL2qCPmxTGjV/9+IIPIReNapeecuNLVpmN6qtPp3N64Q==",
+  "dgSpecHash": "zHxQ0g2nva+UCpBBd3+C/9G5HoC+Hgtq/34xJVWtUt3NHj8881cg9hwPu2HSznGn2CdQmEkbpvIy7SvChrXmRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\OneDrive\\Área de Trabalho\\Projeto Elevador\\Elevator Simulator\\Elevator Simulator.csproj",
+  "projectFilePath": "C:\\Users\\andre\\Source\\Repos\\andregoltz\\ElevatorSimulator\\Elevator Simulator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
