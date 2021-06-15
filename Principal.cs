@@ -1,4 +1,5 @@
 ﻿using Elevator_Simulator.Enums;
+using Elevator_Simulator.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,11 +45,33 @@ namespace Elevator_Simulator
             Floors = GetFloors();
             ElevatorBreak = FIRSTFLOOR;
             pbx_elevator.Location = Floors.FirstOrDefault().Value;
+            BuildButtons();
+
         }
 
         #endregion
 
         #region private methods
+
+        private void BuildButtons()
+        {
+            BuildButton(pbx_Floor0);
+            BuildButton(pbx_Floor1);
+            BuildButton(pbx_Floor2);
+            BuildButton(pbx_Floor3);
+            BuildButton(pbx_Floor4);
+            BuildButton(pbx_Floor5);
+            BuildButton(pbx_Floor6);
+            BuildButton(ptb_emergency);
+        }
+
+        private void BuildButton(PictureBox pictureBox)
+        {
+            System.Drawing.Drawing2D.GraphicsPath graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
+            graphicsPath.AddEllipse(0, 0, pictureBox.Width - 3, pictureBox.Height - 3);
+            Region region = new Region(graphicsPath);
+            pictureBox.Region = region;
+        }
 
         private List<KeyValuePair<int,Point>> GetFloors()
         {
@@ -90,7 +113,7 @@ namespace Elevator_Simulator
 
         private void Animation(Point current, Point next)
         {
-            var movimentationTime = 10;
+            var movimentationTime = 5;
 
             var action = current.Y < next.Y ? ElevatorAction.MoveDown : ElevatorAction.MoveUp;
 
@@ -98,6 +121,7 @@ namespace Elevator_Simulator
             {
                 for (int yAxis = current.Y; yAxis >= next.Y; yAxis--)
                 {
+                    pbx_building.Refresh();
                     Thread.Sleep(movimentationTime);
                     pbx_elevator.Location = new Point(current.X, yAxis);
                 }
@@ -107,12 +131,11 @@ namespace Elevator_Simulator
             {
                 for (int yAxis = current.Y; yAxis <= next.Y; yAxis++)
                 {
+                    pbx_building.Refresh();
                     Thread.Sleep(movimentationTime);
                     pbx_elevator.Location = new Point(current.X, yAxis);
                 }
             }
-
-
         }
         #endregion
 
